@@ -1,0 +1,57 @@
+{
+  "name": "@mitmaro/gulp-clean",
+  "version": "0.0.1",
+  "description": "A reusable clean task for Gulp",
+  "homepage": "https://github.com/MitMaro/mitmaro-gulp-clean",
+  "bugs": "https://github.com/MitMaro/mitmaro-gulp-clean/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MitMaro/mitmaro-gulp-clean.git"
+  },
+  "author": {
+    "name": "Tim Oram",
+    "email": "mitmaro@gmail.com"
+  },
+  "license": "ISC",
+  "main": "lib/Clean.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "del": "^2.0.2",
+    "gulp-util": "^3.0.7"
+  },
+  "devDependencies": {
+    "@mitmaro/js-test-stubs": "0.0.1",
+    "babel": "^5.8.34",
+    "babel-core": "^5.7.0",
+    "babel-istanbul": "^0.5.8",
+    "babel-plugin-rewire": "^0.1.22",
+    "chai": "^3.4.1",
+    "esdoc": "^0.4.3",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-task-help": "0.0.2",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "yargs": "^3.29.0"
+  },
+  "scripts": {
+    "build": "babel-node ./node_modules/.bin/gulp build",
+    "gulp": "babel-node ./node_modules/.bin/gulp",
+    "test": "NODE_ENV=test babel-node ./node_modules/.bin/gulp test",
+    "test:coverage": "NODE_ENV=test babel-node ./node_modules/.bin/gulp test --coverage",
+    "docs": "esdoc -c esdoc.json"
+  },
+  "os": [],
+  "cpu": [],
+  "engines": {
+    "node": ">=0.10.40"
+  },
+  "keywords": [
+    "gulp",
+    "task",
+    "build"
+  ]
+}
