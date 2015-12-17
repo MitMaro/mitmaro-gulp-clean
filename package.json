@@ -1,6 +1,6 @@
 {
   "name": "@mitmaro/gulp-clean",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A reusable clean task for Gulp",
   "homepage": "https://github.com/MitMaro/mitmaro-gulp-clean",
   "bugs": "https://github.com/MitMaro/mitmaro-gulp-clean/issues",
@@ -22,7 +22,9 @@
     "gulp-util": "^3.0.7"
   },
   "devDependencies": {
-    "@mitmaro/js-test-stubs": "0.0.1",
+    "@mitmaro/gulp-babel-mocha": "0.0.1",
+    "@mitmaro/gulp-build-babel": "0.0.1",
+    "@mitmaro/js-test-stubs": "0.0.2",
     "babel": "^5.8.34",
     "babel-core": "^5.7.0",
     "babel-istanbul": "^0.5.8",
@@ -30,7 +32,6 @@
     "chai": "^3.4.1",
     "esdoc": "^0.4.3",
     "gulp": "^3.9.0",
-    "gulp-load-plugins": "^1.1.0",
     "gulp-task-help": "0.0.2",
     "mocha": "^2.3.3",
     "sinon": "^1.17.2",

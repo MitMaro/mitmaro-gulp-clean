@@ -3,10 +3,9 @@ import gulp from 'gulp'
 import GulpPlugins from 'gulp-load-plugins'
 import {argv} from 'yargs'
 import Help from 'gulp-task-help'
-import {buildBabel, babelMocha} from '@mitmaro/gulp-tasks';
+import buildBabel from '@mitmaro/gulp-build-babel';
+import babelMocha from '@mitmaro/gulp-babel-mocha';
 import clean from './src/Clean';
-
-const plugins = GulpPlugins();
 
 const options = {
 	destination: argv.destination || './lib',
@@ -49,12 +48,14 @@ help.registerTask(
 	'help',
 	'Shows information on the usage of gulp.'
 );
+
 help.registerTask(
 	'test',
 	'Run the test suite',
 	[],
 	['coverage', 'bail']
 );
+
 help.registerTask(
 	'build',
 	'Builds the project',
